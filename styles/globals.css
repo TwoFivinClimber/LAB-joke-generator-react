@@ -20,3 +20,10 @@ a {
 body {
   background-color: #88effd;
 }
+
+.text-center{
+  height: 90vh;
+  padding: 30px;
+  max-width: 450px;
+  margin: 0 auto;
+}
