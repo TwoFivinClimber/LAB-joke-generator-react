@@ -18,12 +18,13 @@ a {
 }
 
 body {
-  background-color: #88effd;
+  background-color: #4a7c59;
 }
 
 .text-center{
   height: 90vh;
   padding: 30px;
   max-width: 450px;
-  margin: 0 auto;
+  margin: 15px auto;
+  border: solid black 2px;
 }
