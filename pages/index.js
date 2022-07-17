@@ -12,11 +12,17 @@ function Home() {
 
   const jokeStart = () => {
     getJoke().then((jokeObj) => {
-      setJokeText({
-        setup: jokeObj.setup,
-        delivery: jokeObj.delivery,
-      });
-      changeButton('Get The Punchline');
+      if (!jokeObj.error) {
+        setJokeText({
+          setup: jokeObj.setup,
+          delivery: jokeObj.delivery,
+        });
+        changeButton('Get The Punchline');
+      } if (jokeObj.error) {
+        setJokeText({
+          setup: `Error: ${jokeObj.additionalInfo}`,
+        });
+      }
     });
   };
 
